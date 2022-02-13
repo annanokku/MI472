@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>How to display PHP contact form popup using jQuery</title>
+<title>Contact Form PopUp</title>
 <script src="./vendor/jquery/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -67,7 +67,7 @@ if (! empty($_POST["send"])) {
     $subject = filter_var($_POST["subject"], FILTER_SANITIZE_STRING);
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
     
-    $toEmail = "to_email@gmail.com";
+    $toEmail = "jnokku@gmail.com";
     $mailHeaders = "From: " . $name . "<" . $email . ">\r\n";
     
     if (! mail($toEmail, $subject, $message, $mailHeaders)) {
